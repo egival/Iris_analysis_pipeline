@@ -1,7 +1,7 @@
 # Airflow Iris Data Processing DAG
 
 This repository contains an Airflow DAG for processing and analyzing the Iris flower dataset.
-Dataset has been taken from Kaggle (https://www.kaggle.com/datasets/arshid/iris-flower-dataset?resource=download)
+Dataset has been taken from [Kaggle](https://www.kaggle.com/datasets/arshid/iris-flower-dataset?resource=download).
 
 **Functionality:**
 
@@ -25,3 +25,7 @@ Dataset has been taken from Kaggle (https://www.kaggle.com/datasets/arshid/iris-
 
 1. Set up your Airflow environment and web server (refer to Airflow documentation).
 2. Trigger the DAG manually or through Airflow's scheduler (details in Airflow UI).
+
+**Screenshots from Airflow UI**
+
+![alt text](iris_airflow.PNG)
