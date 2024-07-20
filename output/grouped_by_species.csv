@@ -1,0 +1,5 @@
+species,sepal_length,sepal_length,sepal_length,sepal_length,sepal_width,sepal_width,sepal_width,sepal_width,petal_length,petal_length,petal_length,petal_length,petal_width,petal_width,petal_width,petal_width
+,count,mean,min,max,count,mean,min,max,count,mean,min,max,count,mean,min,max
+setosa,50,5.006,4.3,5.8,50,3.428,2.3,4.4,50,1.462,1.0,1.9,50,0.24600000000000002,0.1,0.6
+versicolor,50,5.936,4.9,7.0,50,2.77,2.0,3.4,50,4.26,3.0,5.1,50,1.3259999999999998,1.0,1.8
+virginica,50,6.587999999999999,4.9,7.9,50,2.9739999999999998,2.2,3.8,50,5.5520000000000005,4.5,6.9,50,2.026,1.4,2.5
