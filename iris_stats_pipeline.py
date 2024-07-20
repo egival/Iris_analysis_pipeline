@@ -3,14 +3,17 @@ from datetime import datetime, timedelta
 from airflow.operators.python import PythonOperator
 import pandas as pd
 
+DATASETS_PATH = '/home/egidija1/airflow/datasets/iris.csv'
+OUTPUT_PATH = '/home/egidija1/airflow/output/{0}.csv'
+
 def transforming_csv_file_data():
     """ 
     Removes null values
     """
-    df = pd.read_csv('/home/egidija1/airflow/datasets/iris.csv')
+    df = pd.read_csv(DATASETS_PATH)
     df_result = df.dropna()
     print(df_result)
-    df_result.to_csv('/home/egidija1/airflow/output/no_null.csv', index=False)
+    df_result.to_csv(OUTPUT_PATH.format('no_null'))
 
 def brief_stats():
     """ 
@@ -24,7 +27,7 @@ def brief_stats():
         'petal_width': ['count', 'mean', 'min', 'max'],
     }).reset_index()
     print(stats_df)
-    stats_df.to_csv('/home/egidija1/airflow/output/brief_stats.csv', index=False)
+    stats_df.to_csv(OUTPUT_PATH.format('brief_stats'), index=False)
     
 def group_by_species():
     """
@@ -38,7 +41,7 @@ def group_by_species():
         'petal_width': ['count', 'mean', 'min', 'max'],
     }).reset_index()
     print(species_df)
-    species_df.to_csv('/home/egidija1/airflow/output/grouped_by_species.csv', index=False)
+    species_df.to_csv(OUTPUT_PATH.format('grouped_by_species'), index=False)
 
 with DAG(
     'Iris_stats_pipeline',
