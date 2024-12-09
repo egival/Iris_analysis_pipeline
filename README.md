@@ -1,6 +1,6 @@
-# Airflow Iris Data Processing DAG
+# Iris Data Processing using Pandas and Airflow
 
-This repository contains an Airflow DAG for processing and analyzing the Iris flower dataset.
+This repository contains an Airflow DAG for processing and analyzing the Iris flower dataset using Pandas.
 Dataset has been taken from [Kaggle](https://www.kaggle.com/datasets/arshid/iris-flower-dataset?resource=download).
 
 **Functionality:**
